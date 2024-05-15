@@ -1,0 +1,105 @@
+/*Menu*/
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+  
+    .abrir-menu {
+        color: #ececec;
+    }
+  
+    .cerrar-menu {
+        color: #ececec;
+    }
+  
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+  
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+  
+    .nav-list li a {
+        color: #ecececec;
+    }
+  }
+ /*Seccion*/ 
+
+  @media (max-width: 700px) {
+    .imagendelseccion,
+    .imagendelseccion2 {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .imagendelseccion,
+    .imagendelseccion2 {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .CajaImagenestexto {
+       flex-direction: row;
+     }
+   
+    .imagendeltexto,
+    .imagendeltexto2 {
+       width: 50%;
+     }
+   }
+  
+  @media (min-width: 200px) {
+   .CajaImagenestexto {
+      flex-direction: column;
+    }
+  
+   .imagendeltexto,
+   .imagendeltexto2 {
+      width: 50%;
+    }
+  }
+
+/*Tarjetas*/
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+/*pie de pagina*/
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
